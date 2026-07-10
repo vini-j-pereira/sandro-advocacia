@@ -25,28 +25,27 @@ export default function Header() {
     { label: "Áreas de Atuação", href: "#servicos" },
     { label: "Sócio Fundador", href: "#advogado" },
     { label: "Nossos Valores", href: "#valores" },
-    { label: "Contato", href: "#contato" },
   ];
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 flex items-stretch bg-brand-creme shadow-md transition-all duration-300 border-b border-brand-navy/10 ${
-        isScrolled ? "h-20" : "h-24"
+        isScrolled ? "h-24" : "h-24"
       }`}
     >
       {/* Left Brand Block with diagonal cut */}
       <div
-        className="bg-brand-red text-white flex items-center pl-6 pr-12 md:pl-10 md:pr-16 lg:pl-16 lg:pr-24 relative select-none transition-all duration-300"
+        className="bg-brand-red text-white flex items-center pl-4 pr-10 md:pl-5 md:pr-12 lg:pl-6 lg:pr-14 xl:pl-12 xl:pr-20 relative select-none transition-all duration-300"
         style={{ clipPath: "polygon(0 0, 100% 0, 88% 100%, 0 100%)" }}
       >
         <a href="#inicio" className="flex flex-col text-left py-2 font-serif">
-          <span className="text-[13px] md:text-sm lg:text-[15px] font-bold uppercase tracking-[0.2em] leading-tight">
+          <span className="text-[11px] md:text-[12px] lg:text-[13px] xl:text-[15px] font-bold uppercase tracking-[0.2em] leading-tight">
             Sandro
           </span>
-          <span className="text-[13px] md:text-sm lg:text-[15px] font-bold uppercase tracking-[0.2em] leading-tight">
+          <span className="text-[11px] md:text-[12px] lg:text-[13px] xl:text-[15px] font-bold uppercase tracking-[0.2em] leading-tight">
             Ricardo
           </span>
-          <span className="text-[13px] md:text-sm lg:text-[15px] font-bold uppercase tracking-[0.2em] leading-tight">
+          <span className="text-[11px] md:text-[12px] lg:text-[13px] xl:text-[15px] font-bold uppercase tracking-[0.2em] leading-tight">
             Fernandes
           </span>
           <span className="text-[7px] lg:text-[8px] font-sans font-bold uppercase tracking-[0.25em] mt-1 opacity-90 leading-none">
@@ -59,14 +58,14 @@ export default function Header() {
       </div>
 
       {/* Right Navigation / Controls */}
-      <div className="flex-grow flex items-center justify-between px-6 md:px-8 lg:px-12">
+      <div className="flex-grow flex items-center justify-end lg:justify-between gap-3 lg:gap-6 px-3 lg:px-4 xl:px-8">
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-6 lg:gap-8 font-serif">
+        <nav className="hidden lg:flex items-center gap-3 lg:gap-4 xl:gap-8 font-serif">
           {navItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className="text-xs font-bold text-brand-navy hover:text-brand-red uppercase tracking-widest transition-colors duration-200"
+              className="text-[9px] lg:text-[11px] xl:text-[13px] font-bold text-brand-navy hover:text-brand-red uppercase tracking-wider xl:tracking-widest transition-colors duration-200 whitespace-nowrap"
             >
               {item.label}
             </a>
@@ -74,10 +73,10 @@ export default function Header() {
         </nav>
 
         {/* Action Button */}
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <a
             href="#contato"
-            className="px-6 py-2.5 bg-brand-navy text-white hover:bg-brand-red font-bold text-xs uppercase tracking-widest transition-all duration-200 shadow-sm"
+            className="px-4 py-2 bg-brand-navy text-white hover:bg-brand-red font-bold text-[9px] lg:text-[11px] xl:text-[13px] uppercase tracking-wider xl:tracking-widest transition-all duration-200 shadow-sm whitespace-nowrap inline-flex items-center justify-center"
           >
             Contato
           </a>
@@ -86,7 +85,7 @@ export default function Header() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden p-1.5 text-brand-navy hover:text-brand-red focus:outline-none"
+          className="lg:hidden p-1.5 text-brand-navy hover:text-brand-red focus:outline-none"
           aria-label="Toggle menu"
         >
           {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -101,9 +100,9 @@ export default function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
-            className="absolute top-full left-0 right-0 bg-brand-creme border-b border-brand-navy/10 shadow-lg md:hidden"
+            className="absolute top-full left-0 right-0 bg-brand-creme border-b border-brand-navy/10 shadow-lg lg:hidden"
           >
-            <div className="px-6 py-6 flex flex-col gap-4 font-serif">
+            <div className="px-6 py-8 flex flex-col gap-6 font-serif">
               {navItems.map((item) => (
                 <a
                   key={item.href}

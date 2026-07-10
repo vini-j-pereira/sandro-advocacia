@@ -20,24 +20,19 @@ export default function Hero() {
           {/* Text Column */}
           <div className="lg:col-span-8 flex flex-col items-start text-left">
             {/* Terracotta/Red Accent Line Subtitle */}
-            <div className="flex items-center gap-3 mb-6">
-              <span className="h-[1.5px] w-6 bg-brand-red inline-block"></span>
-              <span className="text-brand-red text-xs md:text-sm font-bold tracking-[0.25em] uppercase">
-                Direito Administrativo & Licitações
-              </span>
-            </div>
+            
 
             {/* Title */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold font-serif text-white tracking-wide leading-[1.25] mb-6 uppercase">
-              Assessoria <br />
-              Jurídica com <br />
-              <span className="text-brand-blue-steel font-serif">Rigor Técnico e</span> <br />
-              Experiência <br />
+            <h1 className="text-3xl sm:text-2xl md:text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold font-serif text-white tracking-wide leading-[1.25] mb-6 uppercase">
+              Assessoria <br className="hidden xl:inline" />
+              Jurídica com <br className="hidden xl:inline" />
+              <span className="text-brand-blue-steel font-serif">Rigor Técnico e</span> <br className="hidden xl:inline" />
+              Experiência <br className="hidden xl:inline" />
               Consolidada
             </h1>
 
             {/* Description */}
-            <p className="text-sm md:text-base text-brand-grey-300 font-serif leading-relaxed mb-10 max-w-2xl font-light">
+            <p className="text-xs sm:text-xs md:text-base lg:text-sm xl:text-base text-brand-grey-300 font-serif leading-relaxed mb-6 lg:mb-8 max-w-2xl font-light">
               Soluções jurídicas seguras, éticas e eficazes nas relações com a
               Administração Pública, aliando profundo conhecimento técnico à
               experiência prática de quem viveu a gestão pública por dentro.
@@ -58,6 +53,21 @@ export default function Hero() {
               >
                 Fale Conosco
               </a>
+            </div>
+            <div className="flex items-center gap-3 mt-6">
+              <span className="text-brand-red text-xs md:text-sm font-bold tracking-[0.25em] uppercase">
+                <ul>
+                  <li className="text-brand-red text-xs md:text-sm font-bold tracking-[0.25em] uppercase">
+                    • Direito Administrativo
+                  </li>
+                  <li className="text-brand-red text-xs md:text-sm font-bold tracking-[0.25em] uppercase">
+                    • Licitações
+                  </li>
+                  <li className="text-brand-red text-xs md:text-sm font-bold tracking-[0.25em] uppercase">
+                    • Contratos Administrativo
+                  </li>
+                </ul>
+              </span>
             </div>
           </div>
 
