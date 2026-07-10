@@ -56,21 +56,21 @@ export default function Contact() {
             </p>
 
             <div className="space-y-4">
-              {/* Phone item */}
+               {/* Phone item */}
               <a
                 href="https://wa.me/5548991161606"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 rounded bg-brand-navy border border-white/5 hover:border-brand-creme/50 hover:bg-brand-navy/80 transition-all duration-200 group"
+                className="flex items-center gap-4 p-4 rounded bg-brand-navy border border-white/5 hover:border-brand-creme/50 hover:bg-brand-navy/80 transition-all duration-200 group min-w-0"
               >
-                <div className="w-10 h-10 rounded bg-brand-red flex items-center justify-center text-brand-creme border border-white/5">
+                <div className="w-10 h-10 rounded bg-brand-red flex-shrink-0 flex items-center justify-center text-brand-creme border border-white/5">
                   <Phone className="w-4.5 h-4.5" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-[10px] text-brand-creme/75 uppercase font-semibold tracking-wider font-sans">
                     Telefone & WhatsApp
                   </p>
-                  <p className="text-white font-bold text-sm md:text-base font-serif">
+                  <p className="text-white font-bold text-sm md:text-base font-serif truncate">
                     (48) 99116-1606
                   </p>
                 </div>
@@ -79,27 +79,27 @@ export default function Contact() {
               {/* Email item */}
               <a
                 href="mailto:sandroricardofernandes@gmail.com"
-                className="flex items-center gap-4 p-4 rounded bg-brand-navy border border-white/5 hover:border-brand-creme/50 hover:bg-brand-navy/80 transition-all duration-200 group"
+                className="flex items-center gap-4 p-4 rounded bg-brand-navy border border-white/5 hover:border-brand-creme/50 hover:bg-brand-navy/80 transition-all duration-200 group min-w-0"
               >
-                <div className="w-10 h-10 rounded bg-brand-red flex items-center justify-center text-brand-creme border border-white/5">
+                <div className="w-10 h-10 rounded bg-brand-red flex-shrink-0 flex items-center justify-center text-brand-creme border border-white/5">
                   <Mail className="w-4.5 h-4.5" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-[10px] text-brand-creme/75 uppercase font-semibold tracking-wider font-sans">
                     E-mail
                   </p>
-                  <p className="text-white font-bold text-sm md:text-base font-serif">
+                  <p className="text-white font-bold text-xs sm:text-sm md:text-base font-serif break-all">
                     sandroricardofernandes@gmail.com
                   </p>
                 </div>
               </a>
 
               {/* Address item */}
-              <div className="flex items-center gap-4 p-4 rounded bg-brand-navy border border-white/5 group">
-                <div className="w-10 h-10 rounded bg-brand-red flex items-center justify-center text-brand-creme border border-white/5">
+              <div className="flex items-center gap-4 p-4 rounded bg-brand-navy border border-white/5 group min-w-0">
+                <div className="w-10 h-10 rounded bg-brand-red flex-shrink-0 flex items-center justify-center text-brand-creme border border-white/5">
                   <MapPin className="w-4.5 h-4.5" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-[10px] text-brand-creme/75 uppercase font-semibold tracking-wider font-sans">
                     Localização
                   </p>
