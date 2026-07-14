@@ -79,7 +79,7 @@ export default function Hero() {
               <div className="w-[2px] h-14 bg-brand-red flex-shrink-0" />
               <div className="flex flex-col">
                 <span className="text-5xl md:text-6xl font-serif font-bold text-white leading-none">
-                  35+
+                  36+
                 </span>
                 <span className="text-xs md:text-sm text-brand-grey-400 font-serif italic tracking-wide mt-1">
                   anos de experiência
