@@ -10,7 +10,7 @@ export default function Hero() {
       className="relative min-h-screen flex items-center bg-brand-navy pt-28 pb-16 overflow-hidden"
     >
       {/* Background Watermark */}
-      <div className="absolute right-[-5%] bottom-[5%] select-none pointer-events-none text-[15vw] md:text-[12vw] font-serif font-black uppercase text-white/[0.02] tracking-[0.2em] leading-none z-0 hidden md:block">
+      <div className="absolute right-[3%] bottom-[5%] select-none pointer-events-none text-[15vw] md:text-[10vw] font-serif font-black uppercase text-white/[0.02] tracking-[0.2em] leading-none z-0 hidden md:block">
         DIREITO
       </div>
 
