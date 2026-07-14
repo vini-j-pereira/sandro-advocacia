@@ -30,7 +30,7 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 flex items-stretch bg-brand-creme shadow-md transition-all duration-300 border-b border-brand-navy/10 ${
-        isScrolled ? "h-24" : "h-24"
+        isScrolled ? "h-30" : "h-30"
       }`}
     >
       {/* Left Brand Block with diagonal cut */}
@@ -39,19 +39,19 @@ export default function Header() {
         style={{ clipPath: "polygon(0 0, 100% 0, 88% 100%, 0 100%)" }}
       >
         <a href="#inicio" className="flex flex-col text-left py-2 font-serif">
-          <span className="text-[11px] md:text-[12px] lg:text-[13px] xl:text-[15px] font-bold uppercase tracking-[0.2em] leading-tight">
+          <span className="text-[15px] md:text-[12px] lg:text-[13px] xl:text-[16px] font-bold uppercase tracking-[0.2em] leading-tight">
             Sandro
           </span>
-          <span className="text-[11px] md:text-[12px] lg:text-[13px] xl:text-[15px] font-bold uppercase tracking-[0.2em] leading-tight">
+          <span className="text-[10px] md:text-[12px] lg:text-[13px] xl:text-[16px] font-bold uppercase tracking-[0.2em] leading-tight">
             Ricardo
           </span>
-          <span className="text-[11px] md:text-[12px] lg:text-[13px] xl:text-[15px] font-bold uppercase tracking-[0.2em] leading-tight">
+          <span className="text-[10px] md:text-[12px] lg:text-[13px] xl:text-[16px] font-bold uppercase tracking-[0.2em] leading-tight">
             Fernandes
           </span>
-          <span className="text-[7px] lg:text-[8px] font-sans font-bold uppercase tracking-[0.25em] mt-1 opacity-90 leading-none">
+          <span className="text-[7px] lg:text-[13px] font-sans font-bold uppercase tracking-[0.25em] mt-1 opacity-90 leading-none">
             Sociedade de Advocacia
           </span>
-          <span className="text-[7px] lg:text-[8px] font-sans tracking-[0.1em] mt-1 opacity-75">
+          <span className="text-[7px] lg:text-[13px] font-sans tracking-[0.1em] mt-1 opacity-75">
             OAB/SC 16.175
           </span>
         </a>
@@ -60,12 +60,12 @@ export default function Header() {
       {/* Right Navigation / Controls */}
       <div className="flex-grow flex items-center justify-end lg:justify-between gap-3 lg:gap-6 px-3 lg:px-4 xl:px-8">
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center gap-3 lg:gap-4 xl:gap-8 font-serif">
+        <nav className="hidden lg:flex items-center gap-3 lg:gap-4 xl:gap-6 font-serif">
           {navItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className="text-[9px] lg:text-[11px] xl:text-[13px] font-bold text-brand-navy hover:text-brand-red uppercase tracking-wider xl:tracking-widest transition-colors duration-200 whitespace-nowrap"
+              className="text-[9px] lg:text-[11px] xl:text-[18px] font-bold text-brand-navy hover:text-brand-red uppercase tracking-wider xl:tracking-wider transition-colors duration-200 whitespace-nowrap"
             >
               {item.label}
             </a>
@@ -76,7 +76,7 @@ export default function Header() {
         <div className="hidden lg:block">
           <a
             href="#contato"
-            className="px-4 py-2 bg-brand-navy text-white hover:bg-brand-red font-bold text-[9px] lg:text-[11px] xl:text-[13px] uppercase tracking-wider xl:tracking-widest transition-all duration-200 shadow-sm whitespace-nowrap inline-flex items-center justify-center"
+            className="px-4 py-2 bg-brand-navy text-white hover:bg-brand-red font-bold text-[9px] lg:text-[11px] xl:text-[18px] uppercase tracking-wider xl:tracking-wider transition-all duration-200 shadow-sm whitespace-nowrap inline-flex items-center justify-center"
           >
             Contato
           </a>

@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex items-center bg-brand-navy pt-28 pb-16 overflow-hidden"
+      className="relative min-h-screen flex items-center bg-brand-navy pt-50 pb-16 overflow-hidden"
     >
       {/* Background Watermark */}
       <div className="absolute right-[3%] bottom-[5%] select-none pointer-events-none text-[15vw] md:text-[10vw] font-serif font-black uppercase text-white/[0.02] tracking-[0.2em] leading-none z-0 hidden md:block">
@@ -22,17 +22,14 @@ export default function Hero() {
             {/* Terracotta/Red Accent Line Subtitle */}
             
 
-            {/* Title */}
-            <h1 className="text-3xl sm:text-2xl md:text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold font-serif text-white tracking-wide leading-[1.25] mb-6 uppercase">
-              Assessoria <br className="hidden xl:inline" />
-              Jurídica com <br className="hidden xl:inline" />
-              <span className="text-brand-blue-steel font-serif">Rigor Técnico e</span> <br className="hidden xl:inline" />
-              Experiência <br className="hidden xl:inline" />
-              Consolidada
+            <h1 className="text-3xl sm:text-2xl md:text-5xl lg:text-4xl xl:text-4xl 2xl:text-5xl font-bold font-serif text-white tracking-wide leading-[1.25] mb-6 uppercase">
+              Assessoria Jurídica com <br className="hidden lg:inline" />
+              <span className="text-brand-blue-steel font-serif">Rigor Técnico e</span> <br className="hidden lg:inline" />
+              Experiência Consolidada
             </h1>
 
             {/* Description */}
-            <p className="text-xs sm:text-xs md:text-base lg:text-sm xl:text-base text-brand-grey-300 font-serif leading-relaxed mb-6 lg:mb-8 max-w-2xl font-light">
+            <p className="text-xs sm:text-xs md:text-base lg:text-sm xl:text-sm text-brand-grey-300 font-serif leading-relaxed mb-6 lg:mb-8 max-w-2xl font-light">
               Soluções jurídicas seguras, éticas e eficazes nas relações com a
               Administração Pública, aliando profundo conhecimento técnico à
               experiência prática de quem viveu a gestão pública por dentro.
