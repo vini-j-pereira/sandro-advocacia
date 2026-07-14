@@ -19,7 +19,7 @@ export default function MissionVisionFocus() {
     {
       subtitle: "Foco",
       title: "Nossa Atuação",
-      desc: "Atuação estratégica em demandas que envolvem as relações com a Administração Pública, com domínio de matérias complexas e entrega de soluções personalizadas de alto impacto.",
+      desc: "Atuação estratégica em demandas que envolvem as relações com a Administração Pública, com domínio de matérias complexas e entrega de soluções personalizadas de alto impacto. Também atuamos em Direito de Família e Sucessões, oferecendo soluções eficazes para questões patrimoniais, familiares e sucessórias.",
       borderColor: "border-t-brand-blue-steel/60",
     },
   ];

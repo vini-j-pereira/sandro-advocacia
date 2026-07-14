@@ -9,8 +9,8 @@ export default function Services() {
     "Pareceres e recursos administrativos nas demais matérias de Direito Administrativo",
     "Ações judiciais em matéria de Direito Público, Administrativo e contencioso junto ao Poder Judiciário",
     "Defesa de administradores públicos e particulares junto ao Tribunal de Contas",
-    "Oferecimento de representações e denúncias ao Tribunal de Contas e Ministério Público",
-    "Consultoria preventiva e estratégica para gestores e empresas que contratam com o poder público",
+    "Consultoria preventiva e estratégica para gestores e empresas que contratam com o poder público.",
+    "Direito de Família e Sucessões com consultoria e atuação judicial. Separação, divórcio, pensão alimentícia, inventário e partilha, etc",
   ];
 
   const getBorderClass = (idx: number) => {

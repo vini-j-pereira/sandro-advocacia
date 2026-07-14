@@ -61,7 +61,10 @@ export default function Hero() {
                     • Licitações
                   </li>
                   <li className="text-brand-red text-xs md:text-sm font-bold tracking-[0.25em] uppercase">
-                    • Contratos Administrativo
+                    • Contratos Administrativos
+                  </li>
+                  <li className="text-brand-red text-xs md:text-sm font-bold tracking-[0.25em] uppercase">
+                    • Direito De Família E Sucessões
                   </li>
                 </ul>
               </span>
