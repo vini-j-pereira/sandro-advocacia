@@ -28,12 +28,13 @@ export default function Contact() {
       setIsSubmitting(false);
       setSubmitted(true);
 
-      const whatsappNumber = "5548991161606";
-      const text = `Olá Dr. Sandro Ricardo Fernandes, meu nome é ${formData.nome} da empresa ${formData.empresa}. Tenho interesse na assessoria de licitações. Contato: ${formData.whatsapp}. Detalhes: ${formData.mensagem}`;
-      const encodedText = encodeURIComponent(text);
-      const url = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
+      const subject = `Contato do Site - ${formData.nome}`;
+      const body = `Nome: ${formData.nome}\nEmpresa: ${formData.empresa}\nE-mail: ${formData.email}\nWhatsApp/Telefone: ${formData.whatsapp}\n\nMensagem:\n${formData.mensagem}`;
+      const encodedSubject = encodeURIComponent(subject);
+      const encodedBody = encodeURIComponent(body);
+      const mailtoUrl = `mailto:sandro@advsandrorfernandes.com?subject=${encodedSubject}&body=${encodedBody}`;
       
-      window.open(url, "_blank");
+      window.location.href = mailtoUrl;
     }, 1200);
   };
 
@@ -78,7 +79,7 @@ export default function Contact() {
 
               {/* Email item */}
               <a
-                href="mailto:sandroricardofernandes@gmail.com"
+                href="mailto:sandro@advsandrorfernandes.com"
                 className="flex items-center gap-4 p-4 rounded bg-brand-navy border border-white/5 hover:border-brand-creme/50 hover:bg-brand-navy/80 transition-all duration-200 group min-w-0"
               >
                 <div className="w-10 h-10 rounded bg-brand-red flex-shrink-0 flex items-center justify-center text-brand-creme border border-white/5">
@@ -89,7 +90,7 @@ export default function Contact() {
                     E-mail
                   </p>
                   <p className="text-white font-bold text-xs sm:text-sm md:text-base font-serif break-all">
-                    sandroricardofernandes@gmail.com
+                    sandro@advsandrorfernandes.com
                   </p>
                 </div>
               </a>
@@ -119,10 +120,10 @@ export default function Contact() {
                   <CheckCircle2 className="w-6 h-6" />
                 </div>
                 <h3 className="text-xl font-serif text-white font-bold mb-2">
-                  Mensagem Redirecionada!
+                  E-mail Preparado!
                 </h3>
                 <p className="text-xs md:text-sm text-brand-grey-300 max-w-sm mb-6 leading-relaxed font-serif">
-                  Os dados foram formatados. Você foi redirecionado para o WhatsApp do Dr. Sandro Ricardo Fernandes para agilizar o seu atendimento.
+                  Os dados foram formatados. O seu aplicativo de e-mail foi aberto para que você possa enviar a mensagem diretamente para o Dr. Sandro.
                 </p>
                 <button
                   onClick={() => setSubmitted(false)}
@@ -246,15 +247,37 @@ export default function Contact() {
                   {isSubmitting ? (
                     <>
                       <div className="w-4 h-4 rounded-full border-2 border-brand-navy border-t-transparent animate-spin" />
-                      Redirecionando para o WhatsApp...
+                      Abrindo seu aplicativo de e-mail...
                     </>
                   ) : (
                     <>
                       <Send className="w-4 h-4" />
-                      Enviar Mensagem
+                      Enviar Mensagem por E-mail
                     </>
                   )}
                 </button>
+
+                {/* Alternative WhatsApp Divider & Button */}
+                <div className="relative flex py-2 items-center">
+                  <div className="flex-grow border-t border-white/10"></div>
+                  <span className="flex-shrink mx-4 text-[10px] text-brand-creme/60 uppercase tracking-widest font-sans font-bold">ou</span>
+                  <div className="flex-grow border-t border-white/10"></div>
+                </div>
+
+                <a
+                  href="https://wa.me/5548991161606?text=Ol%C3%A1%20Dr.%20Sandro.%20Gostaria%20de%20solicitar%20uma%20consulta%20jur%C3%ADdica."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full py-3.5 rounded border border-[#25D366] hover:bg-[#25D366] hover:text-white text-[#25D366] font-bold text-xs uppercase tracking-widest transition-all flex items-center justify-center gap-2 cursor-pointer font-sans"
+                >
+                  <svg
+                    className="w-4.5 h-4.5 fill-current"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.25 8.477 3.517 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436.002 9.858-4.417 9.86-9.86.002-2.638-1.024-5.117-2.884-6.979C16.59 1.867 14.118.843 11.48.843 6.042.843 1.62 5.261 1.618 10.702c-.001 1.64.498 3.234 1.448 4.826l-.997 3.637 3.725-.977-.247-.134z"/>
+                  </svg>
+                  Conversar via WhatsApp
+                </a>
               </form>
             )}
           </div>
