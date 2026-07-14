@@ -21,7 +21,7 @@ export default function About() {
           <div className="lg:col-span-5 flex justify-center w-full">
             <div className="relative w-full max-w-[340px] aspect-[3/4] rounded shadow-lg bg-brand-navy border border-brand-navy/10 overflow-hidden">
               <Image
-                src="/sandro_fernandes_professional.png"
+                src="/sandro0.jpeg"
                 alt="Sandro Ricardo Fernandes"
                 fill
                 style={{ objectFit: "cover", objectPosition: "center top" }}
