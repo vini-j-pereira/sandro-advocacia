@@ -17,9 +17,57 @@ const cinzel = Cinzel({
 
 export const metadata: Metadata = {
   title: "Sandro Ricardo Fernandes | Sociedade de Advocacia",
-  description: "Assessoria jurídica com rigor técnico e experiência consolidada liderada pelo Dr. Sandro Ricardo Fernandes. OAB/SC 16.175.",
-  keywords: ["licitações", "editais", "direito administrativo", "recursos administrativos", "Sandro Ricardo Fernandes", "advocacia licitações", "assessoria jurídica editais", "TCE/SC"],
+  description: "Assessoria jurídica com rigor técnico e experiência consolidada liderada pelo Dr. Sandro Ricardo Fernandes. Especialista em Licitações, Contratos Administrativos e Tribunais de Contas. OAB/SC 16.175.",
+  keywords: [
+    "licitações",
+    "editais",
+    "direito administrativo",
+    "recursos administrativos",
+    "Sandro Ricardo Fernandes",
+    "advocacia licitações",
+    "assessoria jurídica editais",
+    "TCE/SC",
+    "direito público",
+    "Florianópolis"
+  ],
   authors: [{ name: "Sandro Ricardo Fernandes" }],
+  metadataBase: new URL("https://advsandrorfernandes.com"),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Sandro Ricardo Fernandes | Sociedade de Advocacia",
+    description: "Assessoria jurídica com rigor técnico e experiência consolidada liderada pelo Dr. Sandro Ricardo Fernandes. OAB/SC 16.175.",
+    url: "https://advsandrorfernandes.com",
+    siteName: "Sandro Ricardo Fernandes Advocacia",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Sandro Ricardo Fernandes | Sociedade de Advocacia",
+      },
+    ],
+    locale: "pt_BR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sandro Ricardo Fernandes | Sociedade de Advocacia",
+    description: "Assessoria jurídica com rigor técnico e experiência consolidada liderada pelo Dr. Sandro Ricardo Fernandes. OAB/SC 16.175.",
+    images: ["/og-image.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({
